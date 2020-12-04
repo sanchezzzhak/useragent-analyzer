@@ -9,6 +9,8 @@ use Yiisoft\Form\Widget\Field;
 use Yiisoft\Router\UrlGeneratorInterface;
 use Yiisoft\Router\UrlMatcherInterface;
 
+use App\Command\Crawler\SiteCommand;
+
 return [
     'yiisoft/aliases' => [
         'aliases' => [
@@ -60,6 +62,13 @@ return [
             'field' => Reference::to(Field::class),
             'url' => Reference::to(UrlGeneratorInterface::class),
             'urlMatcher' => Reference::to(UrlMatcherInterface::class),
+        ],
+    ],
+
+    'yiisoft/yii-console' => [
+        'commands' => [
+            'crawler/site' => SiteCommand::class,
+
         ],
     ],
 
