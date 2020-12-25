@@ -16,6 +16,7 @@
     "require": {
         "php": "^7.4|^8.0",
         "httpsoft/http-message": "^1.0.5",
+        "matomo/device-detector": "^4.0",
         "yiisoft/aliases": "^1.1.0",
         "yiisoft/assets": "@dev",
         "yiisoft/cache": "@dev",
@@ -38,6 +39,7 @@
         "yiisoft/view": "@dev",
         "yiisoft/widget": "@dev",
         "yiisoft/yii-bulma": "@dev",
+        "yiisoft/yii-db-migration": "^1.0@dev",
         "yiisoft/yii-debug": "^3.0@dev",
         "yiisoft/yii-event": "@dev",
         "yiisoft/yii-view": "^3.0@dev",
