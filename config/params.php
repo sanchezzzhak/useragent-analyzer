@@ -26,10 +26,10 @@ return [
         ],
     ],
 
-    'yiisoft/db-mysql' => [
-        'dsn' => (new Dsn('mysql', 'localhost', 'useragent', '3306'))->asString(),
-        'username' => 'root',
-        'password' => 'mysql'
+    'yiisoft/db-pgsql' => [
+        'dsn' => (new Dsn('pgsql', '127.0.0.1', 'useragent', '5432'))->asString(),
+        'username' => 'postgres',
+        'password' => 'mysql',
     ],
 
     'yiisoft/form' => [
@@ -76,6 +76,11 @@ return [
             'crawler/site' => SiteCommand::class,
 
         ],
+    ],
+
+    'yiisoft/yii-db-migration' => [
+        'createNamespace' => 'App\\Migration',
+        'updateNamespace' => ['App\\Migration'],
     ],
 
     'yiisoft/yii-debug' => [

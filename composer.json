@@ -16,6 +16,7 @@
     "require": {
         "php": "^7.4|^8.0",
         "httpsoft/http-message": "@dev",
+        "yiisoft/active-record": "@dev",
         "yiisoft/aliases": "@dev",
         "yiisoft/assets": "@dev",
         "yiisoft/cache": "@dev",
@@ -23,6 +24,7 @@
         "yiisoft/composer-config-plugin": "@dev",
         "yiisoft/csrf": "@dev",
         "yiisoft/data-response": "@dev",
+        "yiisoft/db-pgsql": "@dev",
         "yiisoft/di": "@dev",
         "yiisoft/error-handler": "@dev",
         "yiisoft/form": "@dev",
@@ -38,12 +40,11 @@
         "yiisoft/view": "@dev",
         "yiisoft/widget": "@dev",
         "yiisoft/yii-bulma": "@dev",
+        "yiisoft/yii-db-migration": "@dev",
         "yiisoft/yii-debug": "@dev",
         "yiisoft/yii-event": "@dev",
         "yiisoft/yii-view": "@dev",
-        "yiisoft/yii-web": "@dev",
-        "yiisoft/active-record": "@dev",
-        "yiisoft/db-mysql": "@dev"
+        "yiisoft/yii-web": "@dev"
     },
     "require-dev": {
         "codeception/c3": "^2.6.0",
