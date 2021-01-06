@@ -8,7 +8,7 @@ use Yiisoft\Factory\Definitions\Reference;
 use Yiisoft\Form\Widget\Field;
 use Yiisoft\Router\UrlGeneratorInterface;
 use Yiisoft\Router\UrlMatcherInterface;
-
+use Yiisoft\Db\Connection\Dsn;
 use App\Command\Crawler\SiteCommand;
 
 return [
@@ -24,6 +24,12 @@ return [
             '@views' => '@root/resources/views',
             '@message' => '@root/resources/message',
         ],
+    ],
+
+    'yiisoft/db-mysql' => [
+        'dsn' => (new Dsn('mysql', 'localhost', 'useragent', '3306'))->asString(),
+        'username' => 'root',
+        'password' => 'mysql'
     ],
 
     'yiisoft/form' => [
